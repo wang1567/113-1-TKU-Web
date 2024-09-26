@@ -54,6 +54,26 @@
             color: #3498db;
         }
     </style>
+
+    <title>Form Submission</title>
+    <style>
+        .animate__animated {
+            animation-duration: 1s;
+        }
+        .animate__fadeInUp {
+            animation-name: fadeInUp;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 100%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -146,6 +166,38 @@
         <p>喜歡玩 MyCareer</p>
     </div>
 
+</body>
+
+
+
+<body></body>
+    <form id="myForm" class="animate__animated animate__fadeInUp">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">電子郵件:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="message">訊息:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        
+        <input type="submit" value="提交">
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            document.getElementById('result').innerHTML = `
+                <p>提交的姓名: ${name}</p>
+                <p>提交的電子郵件: ${email}</p>
+                <p>提交的訊息: ${message}</p>
+            `;
+        });
+    </script>
 </body>
 
 </html>
