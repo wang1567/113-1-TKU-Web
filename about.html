@@ -8,6 +8,15 @@
     <title>Document</title>
 </head>
 
+<head></head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+
 <body>
 
     <h1>
@@ -17,6 +26,15 @@
     <p>
         資管3C 王國全 411630691 
     </p>
+    
+    <div class="animate__animated animate__bounce">我的名字叫王國全</div>
+
+    <div id="gsapDiv">歡迎來到我的網站</div>
+
+    <script>
+    gsap.to("#gsapDiv", { duration: 2, x: 100, opacity: 0.5 });
+    </script>
+
 
     <a href="https://github.com/wang1567/113-1-TKU-Web/blob/main/about.html">
         點擊前往我的GITHUB網頁

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的複雜網頁</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header>
+        <h1>歡迎來到我的複雜網頁</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#services">服務</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>首頁</h2>
+            <div class="carousel">
+                <img src="https://img.pikbest.com/png-images/qiantu/q-version-cute-cartoon-cute-little-animal-zodiac-pig_2721353.png!f305cw" alt="圖片1">
+                <img src="https://img.pikbest.com/png-images/qiantu/q-version-cute-cartoon-cute-little-animal-zodiac-tiger_2721601.png!w700wp" alt="圖片2">
+                <img src="https://img.pikbest.com/png-images/qiantu/q-version-hand-painted-cartoon-cute-cow-png_2736537.png!w700wp" alt="圖片3">
+            </div>
+        </section>
+        <section id="about">
+            <h2>關於我們</h2>
+            <p>這是關於我們的內容。</p>
+        </section>
+        <section id="services">
+            <h2>服務</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>服務一</h3>
+                    <p>這是服務一的描述。</p>
+                </div>
+                <div class="card">
+                    <h3>服務二</h3>
+                    <p>這是服務二的描述。</p>
+                </div>
+                <div class="card">
+                    <h3>服務三</h3>
+                    <p>這是服務三的描述。</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>聯絡我們</h2>
+            <form>
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">電子郵件:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">訊息:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">送出</button>
+            </form>
+        </section>
+
+        <div class="fade-in">這是一個淡入效果的元素</div>
+        <button id="animateBtn">點擊我</button>
+        <div id="animateDiv" class="fade-in" style="display: none;">這是一個淡入效果的元素</div>
+
+        <script>
+            document.getElementById('animateBtn').addEventListener('click', function() {
+            var div = document.getElementById('animateDiv');
+            div.style.display = 'block';
+            div.classList.add('fade-in');
+            });
+        </script>
+
+        <div class="animate__animated animate__bounce">我的名子叫王國全</div>
+
+
+
+    </main>
+    <footer>
+        <p>© 2024 我的複雜網頁</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
