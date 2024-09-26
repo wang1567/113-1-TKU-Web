@@ -4,73 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 網站標題 -->
-    <title>Document</title>
-</head>
-
-<head></head> 
+    <title>自我介紹</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
-
-<head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        p, ul, ol, table {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .animate__animated {
+            display: inline-block;
+        }
+        .center {
+            text-align: center;
+        }
+        .important {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .italic {
+            font-style: italic;
+            color: #3498db;
+        }
+    </style>
 </head>
-
 
 <body>
 
-    <h1>
-        自我介紹
-    </h1>
+    <h1 class="animate__animated animate__fadeInDown">自我介紹</h1>
 
-    <p>
-        資管3C 王國全 411630691 
-    </p>
+    <p class="animate__animated animate__fadeInUp">資管3C 王國全 411630691</p>
     
     <div class="animate__animated animate__bounce">我的名字叫王國全</div>
 
-    <div id="gsapDiv">歡迎來到我的網站</div>
+    <div id="gsapDiv" class="center">歡迎來到我的網站</div>
 
     <script>
-    gsap.to("#gsapDiv", { duration: 2, x: 100, opacity: 0.5 });
+        gsap.to("#gsapDiv", { duration: 2, x: 100, opacity: 0.5 });
     </script>
 
+    <div class="center">
+        <a href="https://github.com/wang1567/113-1-TKU-Web/blob/main/about.html" class="animate__animated animate__pulse animate__infinite">點擊前往我的GITHUB網頁</a>
+    </div>
 
-    <a href="https://github.com/wang1567/113-1-TKU-Web/blob/main/about.html">
-        點擊前往我的GITHUB網頁
-    </a>
+    <div class="center">
+        <span>⭥點擊上方及下方連結⭥</span>
+    </div>
 
-    <span>
-        ⭠點擊兩側連結⭢
-    </span>
+    <div class="center">
+        <a href="https://github.com/wang1567/113-1-TKU-Web/blob/main/about.html" class="animate__animated animate__pulse animate__infinite">點擊前往我的GITHUB網頁</a>
+    </div>
 
-    <a href="https://github.com/wang1567/113-1-TKU-Web/blob/main/about.html">
-        點擊前往我的GITHUB網頁
-    </a>
+    <div class="center">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXMyYjQ1ZTE3dXZsZ25tYnNqdGRwcHd3ZXdhOTIycmd4cGUxcXZ1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aQwvKKi4Lv3t63nZl9/giphy.webp" alt="GIF" class="animate__animated animate__zoomIn">
+    </div>
+    
+    <h2 class="animate__animated animate__fadeInRight">我的個人資訊</h2>
 
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXMyYjQ1ZTE3dXZsZ25tYnNqdGRwcHd3ZXdhOTIycmd4cGUxcXZ1dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aQwvKKi4Lv3t63nZl9/giphy.webp" alt="">
-
-    <ul>
+    <ul class="animate__animated animate__fadeInLeft">
         <li>身高170cm</li>
         <li>板橋人</li>
-        <li>喜歡messi</li>
-        <li>喜歡curry</li>
+        <li>喜歡 Messi</li>
+        <li>喜歡 Curry</li>
     </ul>
-    <p>我的興趣</p>
-    <ol>
+    
+    <h2 class="animate__animated animate__fadeInRight">我的興趣</h2>
+    
+    <ol class="animate__animated animate__fadeInRight">
         <li>愛打球</li>
         <li>愛看動漫</li>
         <li>愛打遊戲</li>
         <li>愛看運動比賽</li>
     </ol>
 
-    <form action="/submit" method="post">
+    <h2 class="animate__animated animate__fadeInUp">教育背景</h2>
+    <p class="animate__animated animate__fadeInUp">淡江大學 資訊管理學系</p>
+
+    <h2 class="animate__animated animate__fadeInUp">技能</h2>
+    <ul class="animate__animated animate__fadeInLeft">
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>資料庫管理</li>
+    </ul>
+
+    <h2 class="animate__animated animate__fadeInUp">專案</h2>
+    <ul class="animate__animated animate__fadeInLeft">
+        <li>網站開發專案</li>
+        <li>資料分析專案</li>
+        <li>機器學習專案</li>
+    </ul>
+
+    <form action="/submit" method="post" class="animate__animated animate__fadeInUp">
         <label for="name">姓名:</label>
         <input type="text" id="name" name="name">
         <input type="submit" value="提交">
     </form>
 
-    <table>
+    <table class="animate__animated animate__fadeInUp">
         <tr>
           <th>名稱</th>
           <th>年齡</th>
@@ -81,12 +139,13 @@
         </tr>
     </table>
 
-    <strong>這是我的重要通知。</strong>
-    <em>愛打2K的可以找我一起玩喔。</em>
-    <div>
-        <p>喜歡玩myteam</p>
-        <p>喜歡玩mycareer</p>
+    <p class="important animate__animated animate__flash">這是我的重要通知，請勿竊取網站資源。</p>
+    <p class="italic animate__animated animate__flash">愛打2K的可以找我一起玩喔。</p>
+    <div class="animate__animated animate__fadeInUp">
+        <p>喜歡玩 MyTeam</p>
+        <p>喜歡玩 MyCareer</p>
     </div>
+
 </body>
 
 </html>
